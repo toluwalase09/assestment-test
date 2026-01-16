@@ -1,0 +1,19 @@
+# Copy this file to terraform.tfvars and fill in your values
+# terraform.tfvars is in .gitignore and should not be committed
+
+aws_region         = "us-east-1"
+environment        = "staging"
+vpc_cidr           = "10.0.0.0/16"
+domain_name        = "your-domain.com"
+container_registry = "ghcr.io"
+container_image    = "your-username/your-repo"
+image_tag          = "latest"
+task_cpu           = 512
+task_memory        = 1024
+service_desired_count = 2
+db_name            = "devops_app"
+db_username        = "postgres"
+db_password        = "CHANGE_ME_SECURE_PASSWORD"
+db_instance_class  = "db.t3.micro"
+
+
